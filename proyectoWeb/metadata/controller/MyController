@@ -1,0 +1,442 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController",
+        "models": [
+            "libro"
+        ],
+        "stores": [
+            "storeLibro"
+        ],
+        "views": [
+            "ingresolibro"
+        ]
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "models": "typedarray",
+        "stores": "typedarray",
+        "views": "typedarray"
+    },
+    "name": "MyController",
+    "designerId": "3c36036f-0053-48cf-acb3-82988e8807df",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "menu button[action='openAdmin']",
+                "designer|params": [
+                    "window"
+                ],
+                "designer|targetType": "windowadmin",
+                "fn": "onOpenAdmin",
+                "implHandler": [
+                    "var win1 = Ext.widget('windowadmin');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|params": "typedarray",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onOpenAdmin",
+            "designerId": "a2c32934-41c4-44ac-b0fb-5dd2506ffef5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "menu button[action='openUser']",
+                "designer|params": [
+                    "window"
+                ],
+                "designer|targetType": "windowusuario",
+                "fn": "onOpenUsuario",
+                "implHandler": [
+                    "         var win1 = Ext.widget('windowusuario');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|params": "typedarray",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onOpenUsuario",
+            "designerId": "f3935583-6cfc-4743-b48e-f564ad0745d5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mygridpanel button[action='addLibro']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onAgregarLibro",
+                "implHandler": [
+                    "var win=Ext.widget('ingresolibro');",
+                    "mode='Agregar';"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onAgregarLibro",
+            "designerId": "e1fdd881-1c04-4c6b-a54a-a3453daf625a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "ingresolibro button[action='grabarlibro']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onGrabarLibro",
+                "implHandler": [
+                    "        var store = Ext.getStore('storeLibro');",
+                    "        var win1 = button.up('ingresolibro');",
+                    "        var form = win1.down('form').getForm();",
+                    "        var values = form.getValues();",
+                    "",
+                    "      if (mode === 'Actualizar') {",
+                    "",
+                    "        var c_libro_id = Ext.getCmp('libro_id').getValue();",
+                    "        var c_libro_nombre = Ext.getCmp('libro_nombre').getValue().trim().toUpperCase();",
+                    "        var c_libro_autor = Ext.getCmp('libro_autor').getValue().trim().toUpperCase();",
+                    "        var c_libro_editorial = Ext.getCmp('libro_editorial').getValue().trim().toUpperCase();",
+                    "        var c_libro_fecha = Ext.getCmp('libro_fecha').getValue().trim().toUpperCase();",
+                    "        var c_carrera_id = Ext.getCmp('carrera_id').getValue();",
+                    "        var c_semestre_id = Ext.getCmp('semestre_id').getValue();",
+                    "        var c_curso_id = Ext.getCmp('curso_id').getValue();",
+                    "",
+                    "        var libro_id = Ext.encode(c_libro_id);",
+                    "        var libro_nombre = Ext.encode(c_libro_nombre);",
+                    "        var libro_autor = Ext.encode(c_libro_autor);",
+                    "        var libro_editorial = Ext.encode(c_libro_editorial);",
+                    "        var libro_fecha = Ext.encode(c_libro_fecha);",
+                    "        var carrera_id = Ext.encode(c_carrera_id);",
+                    "        var semestre_id = Ext.encode(c_semestre_id);",
+                    "        var curso_id = Ext.encode(c_curso_id);",
+                    "",
+                    "        Ext.Ajax.request({",
+                    "            method: 'POST',",
+                    "            url: 'src/GrabarEditarPersonal.php',",
+                    "            params: {",
+                    "                libro_id: libro_id,",
+                    "                libro_nombre: libro_nombre,",
+                    "                libro_autor: libro_autor,",
+                    "                libro_editorial: libro_editorial,",
+                    "                libro_fecha: libro_fecha,",
+                    "                carrera_id: carrera_id,",
+                    "                semestre_id: semestre_id,",
+                    "                curso_id: curso_id",
+                    "            },",
+                    "            failure: function () {",
+                    "                Ext.Msg.alert('Mensaje', 'Error en el servidor');",
+                    "            },",
+                    "            success: function (response) {",
+                    "                var resp = Ext.decode(response.responseText);",
+                    "                var vacio = resp.data[0];",
+                    "                var actua = resp.data[0];",
+                    "",
+                    "                if (vacio === \"vacio\") {",
+                    "                    Ext.Msg.alert('Mensaje', 'Falta completar los campos... verifique');",
+                    "                } else if (actua === \"actua\") {",
+                    "                    Ext.Msg.alert('Mensaje', 'Actualización exitosa...');",
+                    "                    store.load({",
+                    "                        params: {",
+                    "                            libro_nombre: c_libro_nombre",
+                    "                        }",
+                    "                    });",
+                    "                    win1.close();",
+                    "                }",
+                    "            }",
+                    "        });",
+                    "    }",
+                    "",
+                    "        if (mode == 'Agregar') {",
+                    "            var c_libro_nombre = Ext.getCmp('libro_nombre').getValue().trim().toUpperCase();",
+                    "            var c_libro_autor = Ext.getCmp('libro_autor').getValue().trim().toUpperCase();",
+                    "            var c_libro_editorial = Ext.getCmp('libro_editorial').getValue().trim().toUpperCase();",
+                    "            var c_libro_fecha = Ext.getCmp('libro_fecha').getValue().trim().toUpperCase();",
+                    "            var c_carrera_id = Ext.getCmp('carrera_id').getValue();",
+                    "            var c_semestre_id = Ext.getCmp('semestre_id').getValue();",
+                    "            var c_curso_id = Ext.getCmp('curso_id').getValue();",
+                    "",
+                    "            var libro_nombre = Ext.encode(c_libro_nombre);",
+                    "            var libro_autor = Ext.encode(c_libro_autor);",
+                    "            var libro_editorial = Ext.encode(c_libro_editorial);",
+                    "            var libro_fecha = Ext.encode(c_libro_fecha);",
+                    "            var carrera_id = Ext.encode(c_carrera_id);",
+                    "            var semestre_id = Ext.encode(c_semestre_id);",
+                    "            var curso_id = Ext.encode(c_curso_id);",
+                    "",
+                    "",
+                    "            Ext.Ajax.request({",
+                    "                method: 'POST',",
+                    "                url: 'src/GrabarNuevoPersonal.php',",
+                    "                params: {",
+                    "                    libro_nombre: libro_nombre,",
+                    "                    libro_autor: libro_autor ,",
+                    "                    libro_editorial:libro_editorial,",
+                    "                    libro_fecha: libro_fecha,",
+                    "                    carrera_id:carrera_id,",
+                    "                    semestre_id:semestre_id,",
+                    "                    curso_id:curso_id",
+                    "                },",
+                    "                failure: function () {",
+                    "                    Ext.Msg.alert('Mensaje', 'Error en el servidor al agregar nuevo personal.');",
+                    "                },",
+                    "                success: function (response) {",
+                    "                    var resp = Ext.decode(response.responseText);",
+                    "                    var vacio = resp.data[0];",
+                    "                    var nuevo = resp.data[0];",
+                    "",
+                    "                    if (vacio === \"vacio\") {",
+                    "                        Ext.Msg.alert('Mensaje', 'Falta completar los campos... verifique');",
+                    "                    } else if (nuevo === \"nuevo\") {",
+                    "                        Ext.Msg.alert('Mensaje', 'Ingreso correcto...');",
+                    "                        var grid = Ext.getCmp('grid1');",
+                    "                        store.load({",
+                    "                            params: {",
+                    "                                libro_nombre: c_libro_nombre",
+                    "                            }",
+                    "                    });",
+                    "                        win1.close();",
+                    "                    }",
+                    "                }",
+                    "            });",
+                    "        }",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onGrabarLibro",
+            "designerId": "ba9bba23-541d-4a4e-9bd4-2189fcff5918"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mygridpanel",
+                "selector": "mygridpanel"
+            },
+            "configAlternates": {
+                "ref": "string",
+                "selector": "string"
+            },
+            "name": "mygridpanel",
+            "designerId": "cc596df0-3970-4c93-b980-07c12dbf875b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mygridpanel button[action='editLibro']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onEditarLibro",
+                "implHandler": [
+                    "var win2 = Ext.widget('ingresolibro');",
+                    "var records = this.getMygridpanel().getSelectionModel().getSelection();",
+                    "var editForm = win2.down('form');",
+                    "mode = 'Actualizar';",
+                    "",
+                    "if (records.length === 1) {",
+                    "    var record = records[0];",
+                    "    editForm.getForm().loadRecord(record);",
+                    "} else {",
+                    "    return;",
+                    "}",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onEditarLibro",
+            "designerId": "4da9a073-1532-48a1-bd5e-095e37bb9839"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mygridpanel button[action='eliminarLibro']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onEliminarLibro",
+                "implHandler": [
+                    "var store = Ext.getStore('storeLibro');",
+                    "var grid=this.getMygridpanel();",
+                    "var sm=grid.getSelectionModel().getSelection();",
+                    "var data=[];",
+                    "for(var i=0;i<=sm.length-1;i++){",
+                    "    data.push(sm[i].data);",
+                    "}",
+                    "",
+                    "var datos = Ext.encode(data);",
+                    "Ext.Ajax.request({",
+                    "\tmethod:'GET',",
+                    "\turl:'src/GrabarEliminarPersonal.php',",
+                    "\tparams:{",
+                    "          datos:datos",
+                    "\t},",
+                    "\tfailure:function(){",
+                    "\t\tExt.Msg.alert('Mensaje','Error en el servidor');",
+                    "\t},",
+                    "\tsuccess: function(response){",
+                    "\t\tvar resp = Ext.decode(response.responseText);",
+                    "\t\tvar no = resp.data[0];",
+                    "\t\tif(no=='elim')",
+                    "\t\t{",
+                    "\t\t\tExt.getCmp('grid');",
+                    "\t\t\tstore.load({",
+                    "\t\t\t\tparams:{",
+                    "\t\t\t\t datos: datos",
+                    "\t\t\t\t}",
+                    "\t\t\t});",
+                    "\t\t   alert(\"Personal eliminado...\");",
+                    "\t\t   return;",
+                    "\t\t}",
+                    "",
+                    "\t}",
+                    "});"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onEliminarLibro",
+            "designerId": "22c7afcc-1e3b-4c74-8986-ab31b43d9301"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mygridpanel button[action='salir1']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onSalir1",
+                "implHandler": [
+                    "        var win1 = button.up('windowadmin');",
+                    "        win1.close();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onSalir1",
+            "designerId": "6c5cf848-74f2-4845-be53-a130f301d0bf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "ingresolibro button[action='salir2']",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onSalir2",
+                "implHandler": [
+                    "        var win2 = button.up('ingresolibro');",
+                    "        win2.close();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onSalir2",
+            "designerId": "27bc9b8a-35e7-4502-b9e2-b19a825054ba"
+        }
+    ]
+}

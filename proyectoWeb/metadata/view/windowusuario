@@ -1,0 +1,277 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "windowusuario",
+        "designer|userClassName": "windowusuario",
+        "height": 460,
+        "title": "MÓDULO USUARIO",
+        "width": 711
+    },
+    "configAlternates": {
+        "autoShow": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyWindow",
+    "designerId": "2e7ee199-6a45-454a-b852-5036d0174278",
+    "viewControllerInstanceId": "1d868c82-633d-45c2-bdc2-e1a0a952f73e",
+    "viewModelInstanceId": "4d9b53de-2520-4afc-ae99-fdc0906decce",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 396,
+                "store": "storeUsuario",
+                "title": ""
+            },
+            "configAlternates": {
+                "height": "auto",
+                "store": "store",
+                "title": "string"
+            },
+            "name": "MyGridPanel1",
+            "designerId": "04d10e67-de45-4385-8742-fe1f4cad54b5",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "libro_id",
+                        "text": "N°",
+                        "width": 63
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn8",
+                    "designerId": "077e1150-3723-429e-899c-3350f7ada1bd"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "libro_nombre",
+                        "text": "NOMBRE DEL LIBRO",
+                        "width": 166
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn9",
+                    "designerId": "f22da45d-9104-4ead-87ff-b80c5ebe2141"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "libro_autor",
+                        "text": "AUTOR"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn10",
+                    "designerId": "db5c86a5-e091-4905-9bfd-29088d489ee0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "archivospdf",
+                        "text": "ARCHIVOS PDF",
+                        "width": 148
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn11",
+                    "designerId": "90bf77da-4985-444d-ba23-8b6e763ea8a4",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "                       if (value) {",
+                                    "                            return '<a href=\"' + value + '\" target=\"_blank\">Abrir PDF</a>';",
+                                    "                        }",
+                                    "                        return 'No disponible';"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "4632bb7d-c7ca-41d6-b3e9-5c885bd52473"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable1",
+                    "designerId": "eab3915b-db6b-4d28-aa14-7a110a03c981"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "configAlternates": {
+                        "dock": "string"
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "d9e05f46-3b05-4b93-bf85-3f8e910b3371",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "text": "Buscar"
+                            },
+                            "configAlternates": {
+                                "layout|flex": "number",
+                                "text": "string"
+                            },
+                            "name": "MyButton9",
+                            "designerId": "aca994d8-d70a-4257-924e-dd22f0032d17",
+                            "cn": [
+                                {
+                                    "type": "basicfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button"
+                                        ],
+                                        "fn": "handler1",
+                                        "implHandler": [
+                                            "                var grid = button.up('gridpanel');",
+                                            "                var libroNombre = grid.down('libro_buscado').getValue();",
+                                            "                var store = grid.getStore();",
+                                            "",
+                                            "                store.load({",
+                                            "                    params: {",
+                                            "                        libro_nombre: libroNombre",
+                                            "                    },",
+                                            "                    callback: function(records, operation, success) {",
+                                            "                        if (success) {",
+                                            "                            if (records.length === 0) {",
+                                            "                                Ext.Msg.alert('Mensaje', 'No se encontraron resultados.');",
+                                            "                            }",
+                                            "                        } else {",
+                                            "                            Ext.Msg.alert('Mensaje', 'Error en el servidor al buscar.');",
+                                            "                        }",
+                                            "                    }",
+                                            "                });"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "handler1",
+                                    "designerId": "6cb07e45-7faa-443a-95d4-24d83af1d7ad"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Ingrese Libro:",
+                                "itemId": "libro_buscado",
+                                "layout|flex": null,
+                                "name": "libro_buscado"
+                            },
+                            "configAlternates": {
+                                "fieldLabel": "string",
+                                "itemId": "string",
+                                "layout|flex": "number",
+                                "name": "string"
+                            },
+                            "name": "MyTextField4",
+                            "designerId": "2229c7b3-cdfe-4688-a201-7a6e0bdc7b73"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

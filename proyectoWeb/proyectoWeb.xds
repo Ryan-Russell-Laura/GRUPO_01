@@ -1,0 +1,77 @@
+{
+    "name": "proyectoWeb",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "7.7.0.36",
+            "frameworkVersion": "7.7.0.31"
+        },
+        "urlPrefixTemplate": "http://localhost:}/{path}",
+        "urlPrefix": "http://localhost:}/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "C:/wamp/www/proyectoWeb",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "4.3.4",
+    "xdsBuild": 22,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext77",
+    "viewOrderMap": {
+        "view": [
+            "516da321-ea3c-4630-8b23-64976d73d74c",
+            "f15ef76a-e9d5-428e-8099-961079306c12",
+            "7c8c3408-cb6a-473f-9cda-cf63fb023378",
+            "670f38c5-5322-48a9-bdd9-6c3815ba8b61",
+            "b6cad3ac-0a79-481a-8029-bc5f9f9f833a",
+            "d846d91a-1f38-4c96-be5f-4d839f090f48",
+            "2e7ee199-6a45-454a-b852-5036d0174278",
+            "4d9b53de-2520-4afc-ae99-fdc0906decce",
+            "1d868c82-633d-45c2-bdc2-e1a0a952f73e",
+            "f7e7b02b-069f-49d9-85f5-c8dfa43ea584",
+            "3612bb72-d292-4bee-8d46-26cb98c496b2",
+            "a423ff08-20db-44a3-a318-bf70bee309fc",
+            "f93e169f-b58b-44e8-a6fb-5ef86d5577d2",
+            "cfd5d3cc-b248-4cef-b9ab-fd418574206e",
+            "b3ba44bf-f5cf-424d-8f0a-d65be30e5712"
+        ],
+        "store": [
+            "b426078d-5b68-441a-b7fa-4dd64baa7943",
+            "db15af6e-802f-401a-9393-7a496f784f6b",
+            "014c12c2-7b95-42cb-b4e6-a8507e3b6e55",
+            "475a5289-691e-4038-8751-f87316affd44",
+            "684e033c-aa82-4a35-beb9-052a13371833",
+            "706f8314-624f-41ec-aa48-5016a92b9e19"
+        ],
+        "controller": [
+            "3c36036f-0053-48cf-acb3-82988e8807df"
+        ],
+        "model": [
+            "203a94b9-e801-41a8-b9ef-e44eab4f4fb7",
+            "86dfbbd5-63e4-40f4-8542-6f02e314ebce",
+            "9956d3c9-dac0-42c5-a0ff-b23503070811",
+            "fe51f9e7-625d-4b01-a061-b2a1cb28fdad"
+        ],
+        "resource": [
+            "19637567-df9e-4810-8b69-24de93c79ee9",
+            "018f558d-2201-4237-85a4-514e8ce19c74",
+            "df6c2a7a-b32f-4fcf-b38f-c531244c6b98"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

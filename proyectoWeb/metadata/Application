@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyController"
+        ],
+        "models": [
+            "libro",
+            "carrera",
+            "curso",
+            "semestre"
+        ],
+        "name": "MyApp",
+        "stores": [
+            "storeLibro",
+            "storeCarrera",
+            "storeCurso",
+            "storeSemestre",
+            "storeUsuario",
+            "storeBuscar"
+        ],
+        "views": [
+            "menu",
+            "windowadmin",
+            "windowusuario",
+            "ingresolibro",
+            "MyGridPanel"
+        ]
+    },
+    "configAlternates": {
+        "name": "string",
+        "views": "typedarray",
+        "controllers": "typedarray",
+        "models": "typedarray",
+        "stores": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

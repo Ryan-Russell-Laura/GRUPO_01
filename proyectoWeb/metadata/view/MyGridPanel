@@ -1,0 +1,338 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "mygridpanel",
+        "designer|userClassName": "MyGridPanel",
+        "height": 548,
+        "modal": true,
+        "store": "storeLibro",
+        "title": "",
+        "width": 1016
+    },
+    "configAlternates": {
+        "autoShow": "boolean",
+        "modal": "boolean",
+        "title": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "store": "store",
+        "height": "auto",
+        "width": "auto"
+    },
+    "name": "MyGridPanel",
+    "designerId": "f93e169f-b58b-44e8-a6fb-5ef86d5577d2",
+    "viewControllerInstanceId": "b3ba44bf-f5cf-424d-8f0a-d65be30e5712",
+    "viewModelInstanceId": "cfd5d3cc-b248-4cef-b9ab-fd418574206e",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "libro_id",
+                "text": "N°",
+                "width": 39
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn",
+            "designerId": "316ca0d0-a0c1-4d66-833c-f5749325a660"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "libro_nombre",
+                "text": "TITULO",
+                "width": 177
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn1",
+            "designerId": "c1c1ae74-93b7-441e-a0fc-71cad691d961"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "libro_autor",
+                "text": "AUTOR",
+                "width": 149
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn2",
+            "designerId": "864d4656-be61-4b71-a205-4f473d46265a"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "libro_editorial",
+                "text": "EDITORIAL",
+                "width": 111
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn3",
+            "designerId": "e432f0b7-99e9-48cd-8322-47b5cab6dd72"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "libro_fecha",
+                "text": "FECHA",
+                "width": 92
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn4",
+            "designerId": "c144bd50-609a-4266-a3be-9b88d332ea30"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "carrera_nombre",
+                "text": "CARRERA",
+                "width": 124
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn5",
+            "designerId": "10b7cabe-1b78-492c-9f85-40c2cc840469"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "semestre_periodo",
+                "text": "SEMESTRE",
+                "width": 92
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn6",
+            "designerId": "2a1afcc1-da8a-4d66-a4ab-d733137b886b"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "curso_nombre",
+                "text": "CURSO",
+                "width": 106
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn7",
+            "designerId": "51b269f6-796f-43b6-af9a-9ff493954641"
+        },
+        {
+            "type": "Ext.view.Table",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyTable",
+            "designerId": "74e62076-9418-42eb-868a-e0b0eee6d1be"
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar1",
+            "designerId": "d2f41bff-2526-42d4-9a0a-8c196baf2398",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "addLibro",
+                        "icon": "img/add.png",
+                        "layout|flex": null,
+                        "text": "Agregar"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "icon": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "14783e84-a010-4fea-94bc-75be76478dca",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "editLibro",
+                        "icon": "img/bogus.png",
+                        "layout|flex": null,
+                        "text": "Editar"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "icon": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "8337d0da-5282-48e6-a5e2-4901e8d54cc9",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "eliminarLibro",
+                        "icon": "img/delete_row.gif",
+                        "layout|flex": null,
+                        "text": "Eliminar"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "icon": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton5",
+                    "designerId": "7e9f912e-e197-4c34-8f97-d674c6d82e86",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "salir1",
+                        "icon": "img/exit.png",
+                        "layout|flex": null,
+                        "text": "Salir"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "icon": "string",
+                        "layout|flex": "number",
+                        "text": "string"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "f6b23a12-876e-4595-94b1-1e4c0825bcee",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

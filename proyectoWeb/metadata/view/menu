@@ -1,0 +1,114 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|initialView": true,
+        "designer|userAlias": "menu",
+        "designer|userClassName": "menu",
+        "height": 133,
+        "title": "MENÚ",
+        "width": 446
+    },
+    "configAlternates": {
+        "autoShow": "boolean",
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyWindow",
+    "designerId": "516da321-ea3c-4630-8b23-64976d73d74c",
+    "viewControllerInstanceId": "7c8c3408-cb6a-473f-9cda-cf63fb023378",
+    "viewModelInstanceId": "f15ef76a-e9d5-428e-8099-961079306c12",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "right",
+                "height": 135,
+                "vertical": true,
+                "width": 315
+            },
+            "configAlternates": {
+                "dock": "string",
+                "height": "auto",
+                "vertical": "boolean",
+                "width": "auto"
+            },
+            "name": "MyToolbar",
+            "designerId": "378900a9-a4e7-4408-ba9c-360dff60c317",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "openAdmin",
+                        "icon": "img/add_user.png",
+                        "layout|flex": null,
+                        "text": "MODULO ADMINISTRADOR"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "icon": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "9123a1ae-a753-48f5-ab6d-3dbd18aac1ea",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "action": "openUser",
+                        "icon": "img/rh.png",
+                        "layout|flex": null,
+                        "text": "MODULO USUARIO"
+                    },
+                    "configAlternates": {
+                        "action": "string",
+                        "layout|flex": "number",
+                        "text": "string",
+                        "icon": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "6680863f-9079-40a6-ba76-a7cf4adb4938",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

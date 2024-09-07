@@ -1,0 +1,48 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "windowadmin",
+        "designer|userClassName": "windowadmin",
+        "height": 521,
+        "title": "MÓDULO ADMINISTRADOR",
+        "width": 947
+    },
+    "configAlternates": {
+        "autoShow": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyWindow",
+    "designerId": "670f38c5-5322-48a9-bdd9-6c3815ba8b61",
+    "viewControllerInstanceId": "d846d91a-1f38-4c96-be5f-4d839f090f48",
+    "viewModelInstanceId": "b6cad3ac-0a79-481a-8029-bc5f9f9f833a",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 416
+            },
+            "configAlternates": {
+                "height": "auto"
+            },
+            "name": "mygridpanel1",
+            "designerId": "53bf310c-ae23-4e82-b043-d5ebbb4637f6",
+            "masterInstanceId": "f93e169f-b58b-44e8-a6fb-5ef86d5577d2"
+        }
+    ]
+}
